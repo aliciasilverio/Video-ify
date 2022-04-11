@@ -5,7 +5,7 @@ const cors = require('cors');
 const mongoose = require("mongoose");
 const app = express();
 const morgan = require('morgan');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 //Knows to look for the itemController.js file
 // const itemController = require("./controllers/itemController");
 
@@ -21,6 +21,6 @@ app.use(express.json());
 // app.use('/items', itemController);
 
 
-app.listen(3001, ()=>{
+app.listen(port, ()=>{
     console.log("back-end port is running")
 })
